@@ -8,10 +8,13 @@ setTimeout(_ => {
 
 document.querySelector('button').addEventListener('click',_=> {
   clearTimeout(1)
+  print()
 })
 
 let i = 0
-setInterval(() => {
-  i++
-  console.log(i)
-}, 1000);
+// setInterval(() => {
+//   i++
+//   console.log(i)
+// }, 1000);
+// let elzero = open('https://elzero.org','_blank')
+
