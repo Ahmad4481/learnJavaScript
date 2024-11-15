@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learn JavaScript</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cairo&family=Open+Sans&family=Roboto&display=swap');
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+  }
+
+  body div {
+    margin: 20px 0;
+  }
+
+  select {
+    padding: 10px 7px;
+    border-radius: 4px;
+    margin-left: 10px;
+  }
+</style>
+
+<body>
+  <div class="select-box-one">
+    <label for="fonts">Check a Font</label>
+    <select name="" id="font">
+      <option value="Open-Sans">Open-Sans</option>
+      <option value="Cairo" selected>Cairo</option>
+      <option value="Roboto">Roboto</option>
+    </select>
+  </div>
+  <div class="select-box-two">
+    <label for="colors">Check a Color</label>
+    <select name="" id="color">
+      <option value="Red">Red</option>
+      <option value="Blue">Blue</option>
+      <option value="Green">Green</option>
+      <option value="Yellow">Yellow</option>
+      <option value="Black">Black</option>
+      <option value="Orange">Orange</option>
+    </select>
+  </div>
+  <div class="select-box-Three">
+    <label for="fonts-size">Check The Font Size</label>
+    <select name="" id="size">
+      <option value="16px">16</option>
+      <option value="18px">18</option>
+      <option value="20px">20</option>
+      <option value="22px">22</option>
+      <option value="24px">24</option>
+      <option value="26px">26</option>
+      <option value="28px">28</option>
+      <option value="30px">30</option>
+    </select>
+  </div>
+  <form action="">
+    <div>
+      <input id="one" type="text" placeholder="first name" storge="firstName">
+      <input id="two" type="text" placeholder="last name" storge="lastName">
+      <input id="three" type="text" placeholder="enter your phone" storge="phone">
+      <select name="" id="select" storge="number">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+    <input type="submit" id="submit">
+  </form>
+  <script src="assign.js"></script>
+</body>
+
+</html>
