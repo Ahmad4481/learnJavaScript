@@ -1,16 +1,16 @@
-// let msg = prompt('Print Number From – To','exemple 5-20')
-// let num = msg.split('-')
+let msg = prompt('Print Number From – To','exemple 5-20')
+let num = msg.split('-')
 
-// for (let i = Math.min(...num);i<=Math.max(...num);i++) {
-//   console.log(i)
-// }
+for (let i = Math.min(...num);i<=Math.max(...num);i++) {
+  console.log(i)
+}
 function popup() {
   document.querySelector("div").remove();
 }
 
 document
   .querySelector("button")
-  .addEventListener("click", (_) => setTimeout(popup, 5000));
+  .addEventListener("click", () => setTimeout(popup, 5000));
 
 let i = document.querySelector(".counter").innerHTML;
 
