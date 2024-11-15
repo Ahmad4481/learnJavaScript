@@ -11,7 +11,10 @@ document.querySelector('button').addEventListener('click',_=> {
 })
 
 let i = 0
-setInterval(() => {
+let number = setInterval(() => {
   i++
   console.log(i)
+  if (i===10) {
+    clearInterval(number)
+  }
 }, 1000);
