@@ -24,6 +24,6 @@ document.querySelector("#submit").addEventListener("click", function (event) {
   [one, two, three, select].forEach((el) => {
     sessionStorage.removeItem(el.getAttribute("storge"));
   });
-  document.querySelector("form div").remove();
+  document.querySelector("form").remove();
   event.preventDefault();
 });
