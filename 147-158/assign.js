@@ -108,10 +108,12 @@ const myObj = {
 
 Object.defineProperty(myObj, "score", {
   writable: false,
-  enumerable: true,
-  configurable: true,
 });
-console.log(Object.getOwnPropertyDescriptors(myObj))
+Object.defineProperty(myObj, "id", {
+  enumerable: false,
+});
+
+delete myObj.country;
 
 myObj.score = 500;
 
